@@ -9,7 +9,6 @@ body{
 
 .calculator-grid {
     display: grid;
-    padding-top: 8%;
     grid-template-columns: repeat(4, 6rem);
     justify-content: center;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 0px 0px;
@@ -53,4 +52,10 @@ body{
 .output .current-operand{
     color: white;
     font-size: 2rem;
+}
+
+.admin {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1rem;
+    
 }
