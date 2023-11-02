@@ -126,7 +126,6 @@ function App() {
 
   return (
     <div className="calculator-grid">
-      <div className="admin">created by ArbazWizard01</div>
       <div className="output">
         <div className="previous-operand">
           {previousOperand} {operation}
@@ -163,6 +162,7 @@ function App() {
       >
         =
       </button>
+      <div className="admin">created by ArbazWizard01</div>
     </div>
   );
 }
