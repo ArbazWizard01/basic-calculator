@@ -108,11 +108,12 @@ function evaluate({ currentOperand, previousOperand, operation }) {
     case "-":
       computation = prev - current;
       break;
-    case "*":
+    case "×":
       computation = prev * current;
       break;
     case "÷":
       computation = prev / current;
+      computation = parseFloat(computation).toFixed(7);
       break;
   }
   return computation.toString();
@@ -145,7 +146,7 @@ function App() {
       <DigitButton digit="1" dispatch={dispatch} />
       <DigitButton digit="2" dispatch={dispatch} />
       <DigitButton digit="3" dispatch={dispatch} />
-      <OperationButton operation="*" dispatch={dispatch} />
+      <OperationButton operation="×" dispatch={dispatch} />
       <DigitButton digit="4" dispatch={dispatch} />
       <DigitButton digit="5" dispatch={dispatch} />
       <DigitButton digit="6" dispatch={dispatch} />
